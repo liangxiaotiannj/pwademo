@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name='description'
+    content='评价多为亚马逊卖家提供产品快速出单一体化方案。评价多不仅提供亚马逊真人VP测评，Q&A服务，卖家可以获得安全有效的评论和提问，为产品快速提升排名；还提供竞品ASIN大数据分析和亚马逊备案建站服务，卖家可以获取竞品关键词以及销售数据，还能防止跟卖保护好自己的listing。' />
+  <title>Document</title>
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="MyTest">
+  <meta name="apple-mobile-web-app-title" content="MyTest">
+  <meta name="theme-color" content="#bd4147">
+  <meta name="msapplication-navbutton-color" content="#bd4147">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="index2.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/homescreen-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/homescreen-512x512.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="icons/homescreen-192x192.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="icons/homescreen-512x512.png">
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("sw.js").then(
+          function (registration) {
+            // Registration was successful
+            console.log("ServiceWorker registration successful with scope: ", registration.scope);
+          },
+          function (err) {
+            // registration failed :( 
+            console.log("ServiceWorker registration failed: ", err);
+          });
+      });
+    }
+    // window.addEventListener("beforeinstallprompt", function (e) {
+    //   console.log(e)
+    //   if (isTooSoon) {
+    //     e.preventDefault(); // Prevents prompt display 
+    //     // Prompt later instead: 
+    //     setTimeout(function () {
+    //       isTooSoon = false;
+    //       e.prompt(); // Shows prompt 
+    //     }, 10000);
+    //   }
+
+    // });
+
+  </script>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  test
+  <!-- <iframe src="https://www.pingjiaduo.com" frameborder="0"></iframe> -->
+</body>
+
+</html>
